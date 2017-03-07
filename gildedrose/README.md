@@ -30,15 +30,24 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 
 Approach
 --------
-To see the logic work, run ```$ ruby texttest_fixture.rb texttest_fixture.rb```  
+![Object model](https://github.com/olwend/Gilded_rose/tree/master/gildedrose/gilded_rose.jpg)
+
+To see the logic work, run ```$ ruby texttest_fixture.rb```  
 I added boundary test cases, to cover missing scenarios:  
 - Backstage passes quality increases by 2 sell_in <=10, by 3 sell_in <=5, quality drops to 0 after concert  
 - Backstage passes have a MAX of 50  
 - default behaviour is shown by '+5 Dexterity Vest' for sell_in >0 and <=0  
 - conjured items added cases to check double quality decrease for sell_in >0 and <=0  
 
-This test file shows expected behaviour with exception:  
+This test file results in 2 exceptions to expected behaviour:  
  - 'Sulfuras, Hand of Ragnaros' quality = 80  
  - conjured items do not decrease in value at double rate  
 
- I would raise an issue for Sulfurus quality = 80 and clarify this exception to quality max = 50.  
+ I would raise an issue for Sulfurus quality = 80 to confirm exception to quality max = 50.  
+
+Expected results post extension to add conjured:
+
+ - Conjured Ginger	0	4	  Expected change: item.quality = item.quality - 2
+ - Conjured Ginger	-1	0	Expected change: item.quality = item.quality - 4	sell_in <= 0
+
+The text based approval test is baseline to ensure that changes do not break existing behaviour.

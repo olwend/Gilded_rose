@@ -1,0 +1,41 @@
+Olwens-MBP:gildedrose DOE$ ruby texttest_fixture.rb
+PRE REFACTOR RUN
+
+OMGHAI!
+-------- day 0 --------
+name, sellIn, quality
++5 Dexterity Vest, 10, 20
++5 Dexterity Vest, 0, 10
+Aged Brie, 2, 0
+Elixir of the Mongoose, 5, 7
+Sulfuras, Hand of Ragnaros, 0, 80
+Sulfuras, Hand of Ragnaros, -1, 80
+Backstage passes to a TAFKAL80ETC concert, 15, 20
+Backstage passes to a TAFKAL80ETC concert, 10, 49
+Backstage passes to a TAFKAL80ETC concert, 10, 40
+Backstage passes to a TAFKAL80ETC concert, 5, 49
+Backstage passes to a TAFKAL80ETC concert, 5, 46
+Backstage passes to a TAFKAL80ETC concert, 0, 50
+Backstage passes to a TAFKAL80ETC concert, -1, 0
+Conjured Mana Cake, 3, 6
+Conjured Mana Cake, 1, 6
+Conjured Mana Cake, 0, 4
+
+-------- day 1 --------
+name, sellIn, quality
++5 Dexterity Vest, 9, 19
++5 Dexterity Vest, -1, 8
+Aged Brie, 1, 1
+Elixir of the Mongoose, 4, 6
+Sulfuras, Hand of Ragnaros, 0, 80
+Sulfuras, Hand of Ragnaros, -1, 80
+Backstage passes to a TAFKAL80ETC concert, 14, 21
+Backstage passes to a TAFKAL80ETC concert, 9, 50
+Backstage passes to a TAFKAL80ETC concert, 9, 42
+Backstage passes to a TAFKAL80ETC concert, 4, 50
+Backstage passes to a TAFKAL80ETC concert, 4, 49
+Backstage passes to a TAFKAL80ETC concert, -1, 0
+Backstage passes to a TAFKAL80ETC concert, -2, 0
+Conjured Mana Cake, 2, 5
+Conjured Mana Cake, 0, 5
+Conjured Mana Cake, -1, 2
