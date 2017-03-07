@@ -66,4 +66,3 @@ class Item
     "#{@name}, #{@sell_in}, #{@quality}"
   end
 end
-Contact GitHub API Training Shop Blog About
