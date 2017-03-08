@@ -50,7 +50,6 @@ class GildedRose
         end
       end
     end
-    p "update_quality complete"
   end
 end
 
