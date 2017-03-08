@@ -37,9 +37,10 @@ describe GildedRose do
       expect(@defaults[3].quality).to eq(0)
     end
 
-    # it "item quality value cannot be assigned over 50" do
-    #   expect(@defaults[1].quality).to eq(50)
-    # end
+    it "item quality value cannot be over 50" do
+      @standard_gr.update_quality
+      expect(@defaults[1].quality).to eq(50)
+    end
 
     it "item quality value decreases by 1 daily" do
       @standard_gr.update_quality
@@ -61,7 +62,6 @@ describe GildedRose do
       expect(@defaults[2].quality).to eq(5)
     end
   end
-
 
   context "#update_quality on Sulfuras legendary item" do
 

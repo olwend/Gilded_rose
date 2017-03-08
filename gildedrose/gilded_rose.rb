@@ -9,7 +9,11 @@ class GildedRose
       if item.name != "Aged Brie" and item.name != ("Backstage passes to a TAFKAL80ETC concert" || "Backstage passes to a FATKAL80ETC concert")
         if item.quality > 0
           if item.name != "Sulfuras, Hand of Ragnaros"
+            if item.quality > 50
+                item.quality = 50
+            else
             item.quality = item.quality - 1
+            end
           end
         end
       else
@@ -19,7 +23,6 @@ class GildedRose
             if item.sell_in <= 10
               if item.quality < 50
                 item.quality = item.quality + 2
-                p item.quality
               end
             end
             if item.sell_in <= 5
