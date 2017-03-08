@@ -83,26 +83,26 @@ describe GildedRose do
 
   context "#update_quality on Backstage passes item" do
     before(:each) do
-      @backstage = [Item.new("Backstage passes to a TAFKAL80ETC concert", 10, 50),Item.new("Backstage passes to a TAFKAL80ETC concert", 5, 51),
+      @backstage = [Item.new("Backstage passes to a TAFKAL80ETC concert", 10, 0),Item.new("Backstage passes to a TAFKAL80ETC concert", 5, 0),
         Item.new("Backstage passes to a TAFKAL80ETC concert",-1, 2),Item.new("Backstage passes to a TAFKAL80ETC concert", 9, 0),
-        Item.new("Backstage passes to a TAFKAL80ETC concert", 0, 3),Item.new("Backstage passes to a TAFKAL80ETC concert", - 9, 0)]
+        Item.new("Backstage passes to a TAFKAL80ETC concert", 1, 0),Item.new("Backstage passes to a TAFKAL80ETC concert", - 9, 0)]
       @backstage2 = [Item.new("Backstage passes to a FATKAL80ETC concert", 9, 0)]
       @standard_gr = GildedRose.new(@backstage)
       @standard_gr2 = GildedRose.new(@backstage2)
     end
-    # it "TAFKAL80ETC concert quality + 2 when sell_in is <= 10" do
-    #   @standard_gr.update_quality
-    #   expect(@backstage[0].quality).to eq(52)
-    #   expect(@backstage[3].quality).to eq(52)
-    # end
-    #
-    # it "TAFKAL80ETC concert quality + 3 when sell_in is <= 5" do
-    #   @standard_gr.update_quality
-    #   expect(@backstage[1].quality).to eq(54)
-    #   expect(@backstage[4].quality).to eq(3)
-    # end
+    it "TAFKAL80ETC concert quality + 2 when sell_in is <= 10" do
+      @standard_gr.update_quality
+      expect(@backstage[0].quality).to eq(2)
+      expect(@backstage[3].quality).to eq(2)
+    end
 
-    it "TAFKAL80ETC concert quality = 0 after concert when sell_in = -1" do
+    it "TAFKAL80ETC concert quality + 3 when sell_in is <= 5" do
+      @standard_gr.update_quality
+      expect(@backstage[1].quality).to eq(3)
+      expect(@backstage[4].quality).to eq(3)
+    end
+
+    it "TAFKAL80ETC concert quality = 0 after concert when sell_in = -" do
       @standard_gr.update_quality
       expect(@backstage[2].quality).to eq(0)
       expect(@backstage[5].quality).to eq(0)
