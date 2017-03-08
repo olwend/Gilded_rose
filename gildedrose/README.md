@@ -46,9 +46,10 @@ This test file results in 2 exceptions to expected behaviour:
 https://github.com/olwend/Gilded_rose/issues/1   
 Issue raised to cover legacy bugs fixed (assumption that Sulfurus quality = 80 is a confirmed exception to quality max = 50).  
 
-Expected results post extension to add conjured:
-
- - Conjured Ginger	0	4	  Expected change: item.quality = item.quality - 2
- - Conjured Ginger	-1	0	Expected change: item.quality = item.quality - 4	sell_in <= 0
+Expected results post extension to add conjured:  
+(Expected change: item.quality = item.quality - 2, item.quality = item.quality - 4	sell_in < 0)
+Conjured Mana Cake, 2, 3
+Conjured Mana Cake, 0, 3
+Conjured Mana Cake, -1, -2
 
 The text based approval test is baseline to ensure that changes do not break existing behaviour.
