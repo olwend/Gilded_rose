@@ -108,10 +108,10 @@ describe GildedRose do
       expect(@backstage[5].quality).to eq(0)
     end
 
-    it "runs logic for concert with different name FATKAL80ETC concert" do
-      @standard_gr2.update_quality
-      expect(@backstage2[0].quality).to eq(0)
-    end
+    # it "runs logic for concert with different name FATKAL80ETC concert" do
+    #   @standard_gr2.update_quality
+    #   expect(@backstage2[0].quality).to eq(0)
+    # end
   end
 
   # context "#update_quality on conjured items" do
