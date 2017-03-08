@@ -43,7 +43,8 @@ This test file results in 2 exceptions to expected behaviour:
  - 'Sulfuras, Hand of Ragnaros' quality = 80  
  - conjured items do not decrease in value at double rate  
 
- I would raise an issue for Sulfurus quality = 80 to confirm exception to quality max = 50.  
+https://github.com/olwend/Gilded_rose/issues/1
+Issue raised to cover legacy bugs fixed (assumption tha Sulfurus quality = 80 is a confirmed exception to quality max = 50).  
 
 Expected results post extension to add conjured:
 
