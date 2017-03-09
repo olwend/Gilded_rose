@@ -114,22 +114,22 @@ describe GildedRose do
     # end
   end
 
-  # context "#update_quality on conjured items" do
-  #   before(:each) do
-  #     @conjure = [Item.new("Conjured Mana Cake", 1, 10),Item.new("Conjured Mana Cake", 0, 10),Item.new("Conjured Mana Cake", -1, 12)]
-  #     @standard_gr = GildedRose.new(@conjure)
-  #   end
-  #   it "lowers value by 2 when sell_in > 0" do
-  #     @conjure.update_quality
-  #     expect(@conjure[0].quality).to eq(8)
-  #   end
-  #   it "lowers value by 2 when sell_in = 0" do
-  #     @conjure.update_quality
-  #     expect(@conjure[1].quality).to eq(8)
-  #   end
-  #   it "lowers value by 4 when sell_in < 0" do
-  #     @conjure.update_quality
-  #     expect(@conjure[2].quality).to eq(8)
-  #   end
-  # end
+  context "#update_quality on conjured items" do
+    before(:each) do
+      @conjure = [Item.new("Conjured Mana Cake", 1, 10),Item.new("Conjured Mana Cake", 0, 10),Item.new("Conjured Mana Cake", -1, 12)]
+      @conjure_gr = GildedRose.new(@conjure)
+    end
+    it "lowers value by 2 when sell_in > 0" do
+      @conjure_gr.update_quality
+      expect(@conjure[0].quality).to eq(8)
+    end
+    it "lowers value by 2 when sell_in = 0" do
+      @conjure_gr.update_quality
+      expect(@conjure[1].quality).to eq(8)
+    end
+    # it "lowers value by 4 when sell_in < 0" do
+    #   @conjure_gr.update_quality
+    #   expect(@conjure[2].quality).to eq(8)
+    # end
+  end
 end
