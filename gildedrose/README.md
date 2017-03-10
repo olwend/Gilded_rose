@@ -6,7 +6,7 @@ functionality is easy.
 The text based approval test is baseline to ensure that changes do not break existing behaviour.
 I have completed my rspec test framework, giving 95% coverage of legacy code.
 ```rspec
-Coverage report generated for RSpec to /Users/DOE/Projects/Makers_Course/week10/gildedrose/coverage. 146 / 153 LOC (95.42%) covered.
+Coverage report generated for RSpec 146 / 153 LOC (95.42%) covered.
 ```
 Next step is to write new code to pass the rspec tests.
 
