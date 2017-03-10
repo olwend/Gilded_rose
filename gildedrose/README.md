@@ -3,6 +3,12 @@ Tech test Tues/Weds
 
 The aim is to practice good design, by a refactor of Ruby code in such a way that adding the new "conjured"  
 functionality is easy.
+The text based approval test is baseline to ensure that changes do not break existing behaviour.
+I have completed my rspec test framework, giving 95% coverage of legacy code.
+```rspec
+Coverage report generated for RSpec to /Users/DOE/Projects/Makers_Course/week10/gildedrose/coverage. 146 / 153 LOC (95.42%) covered.
+```
+Next step is to write new code to pass the rspec tests.
 
 Kata text:
 ----------
@@ -42,6 +48,7 @@ I added boundary test cases, to cover missing scenarios:
 This test file results in 2 exceptions to expected behaviour:  
  - 'Sulfuras, Hand of Ragnaros' quality = 80  
  - conjured items do not decrease in value at double rate  
+ - Backstage passes quality increase bug on days 5 & 10
 
 https://github.com/olwend/Gilded_rose/issues/1   
 Issue raised to cover legacy bugs fixed (assumption that Sulfurus quality = 80 is a confirmed exception to quality max = 50).  
@@ -50,6 +57,5 @@ Expected results post extension to add conjured:
 (Expected change: item.quality = item.quality - 2, item.quality = item.quality - 4	sell_in < 0)
 Conjured Mana Cake, 2, 4
 Conjured Mana Cake, 0, 4
-
 
 The text based approval test is baseline to ensure that changes do not break existing behaviour.
